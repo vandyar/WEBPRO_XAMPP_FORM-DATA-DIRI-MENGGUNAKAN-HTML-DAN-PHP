@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data Diri</title>
+</head>
+<body>
+    <h2>Form Data Diri</h2>
+
+    <form action="proses_data_diri.php" method="POST">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>Tanggal Lahir:</label>
+        <input type="datetime-local" name="Tanggal Lahir" required>
+
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi[]" value="membaca">membaca
+        </label><br>
+
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi[]" value="Olahraga">Olahraga
+        </label><br>
+
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi[]" value="menulis">menulis
+        </label><br>
+
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi[]" value="run code">
+        </label><br>
+    
+        <br><br>
+
+        <button type="submit">Kirim Data</button>
+    </form>
+</body>
+</html>
